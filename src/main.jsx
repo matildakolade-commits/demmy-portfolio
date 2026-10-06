@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
 import './styles.css';
 
+import pinkmartImage from './assets/pinkmart.png';
+import gridblockImage from './assets/gridblock.png';
+
 const spotifyTrack = {
   title: 'Gratitude',
   artist: 'Asake',
@@ -9,8 +12,8 @@ const spotifyTrack = {
 };
 
 const projects = [
-  {name:'Pinkmart',type:'hackathon / full-stack',description:'A campus marketplace for discovering student-owned beauty, fashion, and lifestyle businesses.',stack:['React','Node.js','MongoDB'],tone:'pink',image:'/src/assets/pinkmart.png',url:'https://pinkmart.vercel.app/',details:'Built for a Girls Who Code hackathon. I worked across the frontend and full-stack experience to make discovering campus businesses feel simple and fun.'},
-  {name:'GridBlock',type:'game / React',description:'A multiplayer puzzle game where players place blocks and compete in real time.',stack:['React','Java'],tone:'brown',image:'/src/assets/gridblock.png',url:'https://gridblock-mu.vercel.app/',details:'I worked on the frontend experience, board logic, styling, and debugging. Basically: little squares caused a lot of debugging.'}
+  {name:'Pinkmart',type:'hackathon / full-stack',description:'A campus marketplace for discovering student-owned beauty, fashion, and lifestyle businesses.',stack:['React','Node.js','MongoDB'],tone:'pink',image: pinkmartImage,url:'https://pinkmart.vercel.app/',details:'Built for a Girls Who Code hackathon. I worked across the frontend and full-stack experience to make discovering campus businesses feel simple and fun.'},
+  {name:'GridBlock',type:'game / React',description:'A multiplayer puzzle game where players place blocks and compete in real time.',stack:['React','Java'],tone:'brown',image: gridblockImage,url:'https://gridblock-mu.vercel.app/',details:'I worked on the frontend experience, board logic, styling, and debugging. Basically: little squares caused a lot of debugging.'}
 ];
 
 function CustomCursor(){
